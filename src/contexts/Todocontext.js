@@ -1,7 +1,7 @@
-import { useContext ,createContext } from "react";
+import { useContext , createContext } from "react";
 
 
-export const Todocontext = useContext({
+export const Todocontext = createContext({
     todos: [
         {
             id: 1,
