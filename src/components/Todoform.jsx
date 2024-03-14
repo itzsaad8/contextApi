@@ -8,10 +8,10 @@ const Todoform = () => {
     const add = (e) => {
         e.preventDefault()
 
-        if (!todo) return
+        if (!todo && todo === e.target.value) return
 
         addtodo({ todo, completed: false })
-        setTodo('')
+        setTodo(todo)
 
     }
     return (
